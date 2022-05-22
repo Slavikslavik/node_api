@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    
+<body>
+    <header>
+        <%- include('../partials/header', { auth } ); %>
+    </header>
+    <p>hi</p>
+    <% if(auth) {%>
+        <p>heelllllo</p>
+        <%}%>
+    <p>hello</p>
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+</html>

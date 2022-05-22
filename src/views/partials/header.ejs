@@ -1,0 +1,12 @@
+<header>
+    <nav>
+        <% if(auth) {%>
+            <a href="/users">users</a>
+            <a href="/logout">logout</a>
+        <%} else { %>
+            <a href="/signin">signin</a>
+            <a href="/signup">signup</a>
+            <a href="/users">users</a>
+        <%}%>
+    </nav>
+</header>
