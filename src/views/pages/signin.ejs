@@ -11,17 +11,15 @@
             <a href="/users">users</a>
         </nav>
     </header>
+    </header>
     <p>hi </p>
     <% if(error) {%>
         <p><%- error %></p>
         <%}%>
-    <form action="/signup" method="post">
+    <form action="/signin" method="post">
         <input type="email" name="email" >
-        <input type="date" name="DOB" id="">
-        <input type="text" name="username">
-        <input type="password" name="password" id="">
-        <input type="password" name="confirmPassword" id="">
-        <input type="submit" value="Sing up">
+        <input type="password" name="password">
+        <input type="submit" value="Sing in">
     </form>
     <p>bye</p>
     <footer>

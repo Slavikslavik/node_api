@@ -9,7 +9,10 @@
         <%- include('../partials/header', { auth } ); %>
     </header>
     <p>hi</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo quas fugit a, enim omnis laudantium illum. Dicta earum libero aut veritatis eum et perferendis in itaque aperiam, accusamus, quam nam!</p>
+    <% if(auth) {%>
+        <p>heelllllo</p>
+        <%}%>
+    <p>hello</p>
     <footer>
         <%- include('../partials/footer'); %>
     </footer>

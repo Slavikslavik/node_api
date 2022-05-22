@@ -1,12 +1,12 @@
 const {Router} = require("express");
+const { append } = require("express/lib/response");
 
 const homeRouter = new Router();
 
 homeRouter.get("/", ( req, res )=>{
     const { auth } = req.session;
-    console.log(auth,'auth');
     //and send auth to our template
-    res.render("pages/index", { auth })
+    res.render("pages/index", {auth})
 });
 
 homeRouter.post("/", ( req, res )=>{
